@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "helpdesk-admin",
+      "name": "vue-learn",
       "script": "bin/www",
       "cwd": "/app",
       "max_restarts": 3,
@@ -10,7 +10,7 @@
       "exec_mode": "fork",
       "instances": 1,
 
-      "ignore_watch" : ["vuejsapp", "infra", "node_modules", "test", ".idea", ".git", "markup"],
+      "ignore_watch" : ["infra", "node_modules", "test", ".idea", ".git"],
 
       "watch_options": {
         "followSymlinks": false,

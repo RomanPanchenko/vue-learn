@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+  vue-learn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node bin/www
+    volumes:
+      - ./src:/app/src
+    environment:
+      NODE_ENV: "development"
+

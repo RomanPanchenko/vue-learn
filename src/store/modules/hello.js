@@ -3,7 +3,10 @@
 export default {
     namespaced: true,
     state: {
-        message: 'Hi, glad to see you!'
+        username: '',
+        hiMessage: 'Hi, glad to see you!',
+        byeMessage: 'Bye, was glad to see you!',
+        neutralMessage: 'The weather is fine.',
     },
     actions: {
     },

@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+'use strict';
+
+const shell = require('shelljs');
+shell.exec('cd /app && npm run serve');
