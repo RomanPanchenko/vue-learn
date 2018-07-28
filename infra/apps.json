@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "name": "helpdesk-admin",
+      "script": "bin/www",
+      "cwd": "/app",
+      "max_restarts": 3,
+      "min_uptime": 240000,
+      "kill_timeout": 10000,
+      "exec_mode": "fork",
+      "instances": 1,
+
+      "ignore_watch" : ["vuejsapp", "infra", "node_modules", "test", ".idea", ".git", "markup"],
+
+      "watch_options": {
+        "followSymlinks": false,
+        "usePolling": true,
+        "interval": 1000
+      }
+    }
+  ]
+}
