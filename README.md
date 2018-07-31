@@ -34,9 +34,9 @@ vue-learn_1  |   App running at:
 vue-learn_1  |   - Local:   http://localhost:8080/
 vue-learn_1  |   - Network: http://172.19.0.2:8080/
 ```
-Enter URL http://localhost:8082/in your browser
+Type http://localhost:8082/ into address bar of your browser and press Enter
 
-(Port can be changed in file docker-compose.yml)
+(Port 8082 can be changed in file docker-compose.yml)
 
 ### Rebuild Docker container if you changed Dockerfile
 ```
