@@ -11,4 +11,4 @@ services:
     environment:
       NODE_ENV: "development"
     ports:
-      - "8080:8080"
+      - "8082:8080"

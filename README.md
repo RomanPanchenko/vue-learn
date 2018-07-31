@@ -34,7 +34,9 @@ vue-learn_1  |   App running at:
 vue-learn_1  |   - Local:   http://localhost:8080/
 vue-learn_1  |   - Network: http://172.19.0.2:8080/
 ```
-You have to copy Network link (in this case http://172.19.0.2:8080/) and use it in your browsers
+Enter URL http://localhost:8082/in your browser
+
+(Port can be changed in file docker-compose.yml)
 
 ### Rebuild Docker container if you changed Dockerfile
 ```
@@ -48,3 +50,12 @@ docker-compose up --build
 ### Stop container
 You can just press Ctrl+C twice (don't know about MAC, may be Cmd+C twice)
 
+### In some cases you have to remove and rebuild your container from scratch
+To do that please do that execute in your vue-learn folder:
+```
+/vue-learn $ docker-compose rm vue-learn
+
+/vue-learn $ docker-compose build --no-cache
+
+/vue-learn $ docker-compose up
+```
